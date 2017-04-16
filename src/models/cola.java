@@ -4,25 +4,30 @@ import java.util.Scanner;
 
 public class cola<T> {
 
+	
 	// ATRIBUTOS
 	private T[] elementos;
 
 	public cola() {
 
-		elementos[] T = new elementos[0];
+		this.elementos =(T[]) new Object[0];
 	}
 
 	// METODOS
 
+	
 	public void push(T element) {
 		Scanner aux = new Scanner(System.in);
-		int cont = elementos.length;
-		elementos[] T = new elementos[cont++];
-		for(int i = cont; i< elementos.length; i++){
-			
-			elementos[i] = (T) aux.nextLine();
-		}
 
+		T[] elementos = (T[]) new Object[this.elementos.length + 1];
+		for(int i = 0; i< elementos.length; i++){
+			
+			elementos[i] =elementos[i];
+			
+		}
+	
+			elementos[elementos.length-1]= (T) element;
+			this.elementos = elementos;
 	}
 
 	public void remove(T element) {
@@ -63,7 +68,7 @@ public class cola<T> {
 
 	public boolean isEmpty() {
 		boolean vacio = false;
-		if (elementos.length == 0) {
+		if (this.elementos.length == 0) {
 			vacio = true;
 		}
 
